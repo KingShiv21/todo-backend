@@ -4,7 +4,7 @@ export const dbConnect = () =>{
 
 
     mongoose.connect(process.env.SERVER, {
-    dbName: process.env.DATABASE
+    dbName: "api"
 }).then(
     (c) => { console.log(`db connected with ${c.connection.host}`) }
 ).catch(
